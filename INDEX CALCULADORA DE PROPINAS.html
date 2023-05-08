@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculadora de Propinas</title>
+        <style>
+            /* Estilos CSS */
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f1f1f1;
+                text-align: center;
+            }
+            #currency {
+                 position: absolute;
+                 top: 30px;
+                left: 30px;
+            }
+            
+            input [type="text"] {
+                width: 100%;
+                padding: 30px;
+                margin-bottom: 30px;
+                box-sizing: border-box;
+            }
+
+            button {
+                padding: 30px 60px;
+                background-color: #4c56af;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Calculadora de Propinas</h1>
+            <h1> Para Restaurantes</h1>
+
+            <input type="number" id="totalAmount" placeholder="Monto Total">
+            <input type="number" id="tipPercentage" placeholder="Porcentaje de propina">
+            <button onclick="calculateTip()">Calcular</button>
+
+            <div id="result"></div>
+            
+            <script src ="script.js"></script>
+         </div>
+        
+         <select id="currency">
+            <option value="$">Dólar ($)</option>
+            <option value="€">Euro (€)</option>
+            <option value="¥">Yen (¥)</option>
+        </select>
+        
+        
+        </body>
+        </html>
